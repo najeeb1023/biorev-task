@@ -1,4 +1,4 @@
-import { LoginPage } from "./pages/loginPage"
+import { LoginPage } from "./pages/loginPage.ts"
 
 describe('Authentication', () => {
 
