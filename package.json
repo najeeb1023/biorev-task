@@ -1,0 +1,15 @@
+{
+  "name": "biorev-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "cypress:open": "ts-node --esm node_modules/cypress/bin/cypress open",
+  "cypress:run": "ts-node --esm node_modules/cypress/bin/cypress run"
+  },
+  "author": "Gul Najeeb Channa",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}

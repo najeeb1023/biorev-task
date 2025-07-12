@@ -1,0 +1,25 @@
+{
+    "name": "Login Page",
+    "webElements": [
+        {
+            "elementName": "usernameField",
+            "selectorValue": "input[name='username']"
+        },
+        {
+            "elementName": "passwordField",
+            "selectorValue": "input[name='password']"
+        },
+        {
+            "elementName": "loginBtn",
+            "selectorValue": "button[type='submit']"
+        },
+        {
+            "elementName": "welcomeHeader",
+            "selectorValue": "h4[class='subheader']"
+        },
+        {
+            "elementName": "errorMessage",
+            "selectorValue": "div[id='flash-messages']"
+        }
+    ]
+}
