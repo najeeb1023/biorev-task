@@ -11,17 +11,26 @@ on:
 
 jobs:
   run-tests:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - name: Install NPM
-        run: echo "npx install -g npm"
-      - name: Install Cypress & Typescript
-        run: echo "npm install cypress typescript"
-        
-      - name: Run Tests
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Cypress (if not in package.json)
+        run: npx cypress install
+
+      - name: Show project file structure (debug)
+        run: find . -type f
+
+      - name: Run Cypress Tests
         run: npx cypress run
