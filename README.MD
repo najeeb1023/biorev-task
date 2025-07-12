@@ -1,4 +1,4 @@
-# Reffie Test Automation Framework
+# Biorev Task - Test Automation Framework
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
 
